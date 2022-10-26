@@ -18,6 +18,7 @@ body {
     display: grid;
     place-items: center;
     font-family: 'Inter';
+    overflow-x: hidden;
 }
 /* HEADER */
 .header {
@@ -108,7 +109,6 @@ body {
 .article {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    /* align-items: center; */
     gap: 20px;
     margin-bottom: 2rem;
 }
@@ -151,17 +151,18 @@ body {
 /* CREDITS */
 /* ACTIVE */
 .menu {
-    display: none;
-    padding: 1.5rem;
-}
-.active .menu {
     display: block;
+    padding: 1.5rem;
     position: absolute;
-    width: 60%;
+    width: 62%;
     height: 100%;
     top: 0;
-    right: 0;
+    right: -100%;
+    transition: all 0.3s ease-in;
     background-color: var(--off-white);
+}
+.active .menu {
+    right: 0;
 }
 .icon-close {
     cursor: pointer;

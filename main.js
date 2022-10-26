@@ -1,4 +1,4 @@
-const header = document.querySelector('body');
+const header = document.querySelector('.head');
 const menu = document.querySelector('.icon-menu')
 const close = document.querySelector('.icon-close')
 
