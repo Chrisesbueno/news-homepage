@@ -245,15 +245,19 @@ body {
         font-size: 14px;
     }   
     .head {
-        grid-column: 1 / 4;
+        grid-column: 1 / -1;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
     .menu {
         display: flex;
         align-items: center;
+        justify-content: end;
         height: 100%;
         padding: 0rem;
+        right: 0%;
+        position: relative;
     }
     .icon-close {
         display: none;
